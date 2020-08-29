@@ -43,8 +43,8 @@ def extract_from_text(text):
 def calculate_value():
     text = input.get()
     speech = gTTS(text=text, lang="en")
-    speech.save(r"E:\Pycharm\Tkinter Projects\Smart Calculator\speech.mp3")
-    playsound(r"E:\Pycharm\Tkinter Projects\Smart Calculator\speech.mp3")
+    speech.save(r"E:\python_workspace\Tkinter Projects\Smart Calculator\speech.mp3")
+    playsound(r"E:\python_workspace\Tkinter Projects\Smart Calculator\speech.mp3")
     for word in text.split(" "):
         if word.upper() in operations.keys():
             try:
